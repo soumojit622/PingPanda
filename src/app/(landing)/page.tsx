@@ -24,20 +24,19 @@ import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 const Page = () => {
   const codeSnippet = `await fetch("http://localhost:3000/api/v1/events", {
-  method: "POST",
-  body: JSON.stringify({
-    category: "sale",
-    fields: {
-      plan: "PRO",
-      email: "sample123@email.com",
-      amount: 49.00
+    method: "POST",
+    body: JSON.stringify({
+      category: "sale",
+      fields: {
+        plan: "PRO",
+        email: "zoe.martinez2001@email.com",
+        amount: 49.00
+      }
+    }),
+    headers: {
+      Authorization: "Bearer <YOUR_API_KEY>"
     }
-  }),
-  headers: {
-    Authorization: "Bearer <Soumojit Banerjee>"
-  }
-})`
-
+  })`
   return (
     <>
       <section className="relative py-24 sm:py-32 bg-brand-25">
